@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dasbor Admin - GoGreen</title>
+  <title>Artikel Admin - GoGreen</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,6 +36,14 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+<style>
+.table-image {
+  td, th {
+  vertical-align: middle;
+  }
+}
+  </style>
 </head>
 
 <body>
@@ -106,14 +114,14 @@
     <ul class="sidebar-nav mt-2" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="dashboard.html">
+        <a class="nav-link collapsed" href="dashboard.html">
           <i class="bi bi-grid"></i>
           <span>Dasbor</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="admin_article.html">
+        <a class="nav-link" href="admin_article.html">
           <i class="bi bi-file-earmark-text"></i>
           <span>Artikel</span>
         </a>
@@ -133,90 +141,117 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Dasbor</h1>
+      <h1>Artikel</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
-          <li class="breadcrumb-item active">Dasbor</li>
+          <li class="breadcrumb-item active">Artikel</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section dashboard">
+    <section class="section table">
       <div class="row">
-
-        <!-- Left side columns -->
         <div class="col-lg-12">
-          <div class="row">
 
-            <!-- Artikel Card -->
-            <div class="col-xxl-12 col-md-12">
-              <div class="card info-card sales-card">
-                <div class="card-body">
-                  <h5 class="card-title">Artikel</h5>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="add_article.html"><button type="button" class="btn btn-primary rounded">Tambah</button></a>
+              </h5>
 
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-file-earmark-text"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>145</h6>
+              <!-- Table with hoverable rows -->
+              <table class="table table-hover table-image">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Gambar</th>
+                    <th scope="col">Judul</th>
+                    <th scope="col">Penulis</th>
+                    <th scope="col">Kategori</th>
+                    <th scope="col">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="w-25">
+                      <img src="assets/img/about_us.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                    <td>Tom Holland</td>
+                    <td>Berita</td>
+                    <td>
+                      <div class="col-4"><i class="bi bi-pencil-square"></i></div>
+                      <div class="col-4"><i class="bi bi-eye-fill"></i></div>
+                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="w-25">
+                      <img src="assets/img/about_us.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                    <td>Tom Holland</td>
+                    <td>Berita</td>
+                    <td>
+                      <div class="col-4"><i class="bi bi-pencil-square"></i></div>
+                      <div class="col-4"><i class="bi bi-eye-fill"></i></div>
+                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="w-25">
+                      <img src="assets/img/about_us.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                    <td>Tom Holland</td>
+                    <td>Berita</td>
+                    <td>
+                      <div class="col-4"><i class="bi bi-pencil-square"></i></div>
+                      <div class="col-4"><i class="bi bi-eye-fill"></i></div>
+                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td class="w-25">
+                      <img src="assets/img/portfolio-details-1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                    <td>Tom Holland</td>
+                    <td>Berita</td>
+                    <td>
+                      <div class="col-4"><i class="bi bi-pencil-square"></i></div>
+                      <div class="col-4"><i class="bi bi-eye-fill"></i></div>
+                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td class="w-25">
+                      <img src="assets/img/hero-bg.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                    <td>Tom Holland</td>
+                    <td>Berita</td>
+                    <td>
+                      <div class="col-4"><i class="bi bi-pencil-square"></i></div>
+                      <div class="col-4"><i class="bi bi-eye-fill"></i></div>
+                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End Table with hoverable rows -->
 
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div><!-- End Artikel Card -->
-
-            <!-- Pendaftar Card -->
-            <div class="col-xxl-8 col-md-12">
-              <div class="card info-card revenue-card">
-
-                <div class="card-body">
-                  <h5 class="card-title">Pendaftar</h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-person-plus"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>264</h6>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div><!-- End Pendaftar Card -->
-
-            <!-- Anggota Card -->
-            <div class="col-xxl-6 col-xl-12">
-
-              <div class="card info-card customers-card">
-
-                <div class="card-body">
-                  <h5 class="card-title">Anggota</h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>124</h6>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div><!-- End Anggota Card -->
-
+            </div>
           </div>
-        </div><!-- End Left side columns -->
+          
 
-        
+        </div>
       </div>
     </section>
 
