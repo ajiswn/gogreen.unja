@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Artikel Admin - GoGreen</title>
+  <title>Edit Artikel - GoGreen</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,13 +36,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-
-<style>
-.table-image {
-  td, th {
-  vertical-align: middle;
-  }
-}
+  <style>
   </style>
 </head>
 
@@ -141,116 +135,66 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Artikel</h1>
+      <h1>Edit Artikel</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
-          <li class="breadcrumb-item active">Artikel</li>
+          <li class="breadcrumb-item active">Edit Artikel</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section table">
+    <section class="section">
       <div class="row">
-        <div class="col-lg-12">
-
+        <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">
-                <a href="add_article.html"><button type="button" class="btn btn-primary rounded">Tambah</button></a>
-              </h5>
+              <h5 class="card-title">Formulir Edit Artikel</h5>
 
-              <!-- Table with hoverable rows -->
-              <table class="table table-hover table-image">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Gambar</th>
-                    <th scope="col">Judul</th>
-                    <th scope="col">Penulis</th>
-                    <th scope="col">Kategori</th>
-                    <th scope="col">Aksi</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td class="w-25">
-                      <img src="assets/img/about_us.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
-                    </td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
-                    <td>Tom Holland</td>
-                    <td>Berita</td>
-                    <td>
-                      <a href="edit_article.html"><div class="col-4"><i class="bi bi-pencil-square"></i></div></a>
-                      <a href="detail_article.html"><div class="col-4"><i class="bi bi-eye-fill"></i></div></a>
-                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td class="w-25">
-                      <img src="assets/img/about_us.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
-                    </td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
-                    <td>Tom Holland</td>
-                    <td>Berita</td>
-                    <td>
-                      <a href="edit_article.html"><div class="col-4"><i class="bi bi-pencil-square"></i></div></a>
-                      <a href="detail_article.html"><div class="col-4"><i class="bi bi-eye-fill"></i></div></a>
-                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td class="w-25">
-                      <img src="assets/img/about_us.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
-                    </td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
-                    <td>Tom Holland</td>
-                    <td>Berita</td>
-                    <td>
-                      <a href="edit_article.html"><div class="col-4"><i class="bi bi-pencil-square"></i></div></a>
-                      <a href="detail_article.html"><div class="col-4"><i class="bi bi-eye-fill"></i></div></a>
-                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td class="w-25">
-                      <img src="assets/img/portfolio-details-1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
-                    </td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
-                    <td>Tom Holland</td>
-                    <td>Berita</td>
-                    <td>
-                      <a href="edit_article.html"><div class="col-4"><i class="bi bi-pencil-square"></i></div></a>
-                      <a href="detail_article.html"><div class="col-4"><i class="bi bi-eye-fill"></i></div></a>
-                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td class="w-25">
-                      <img src="assets/img/hero-bg.jpg" class="img-fluid img-thumbnail" alt="Sheep">
-                    </td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
-                    <td>Tom Holland</td>
-                    <td>Berita</td>
-                    <td>
-                      <a href="edit_article.html"><div class="col-4"><i class="bi bi-pencil-square"></i></div></a>
-                      <a href="detail_article.html"><div class="col-4"><i class="bi bi-eye-fill"></i></div></a>
-                      <div class="col-4"><i class="bi bi-trash-fill"></i></div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- End Table with hoverable rows -->
-
+              <!-- Vertical Form -->
+              <form class="row g-3">
+                <div class="col-12">
+                  <label for="judul" class="form-label">Judul</label>
+                  <input type="text" class="form-control" id="judul" value="Lorem ipsum dolor sit amet consectetur adipisicing elit">
+                </div>
+                <div class="col-12">
+                  <label for="gmabar" class="form-label">Gambar</label>
+                  <input type="file" class="form-control" id="gambar">
+                </div>
+                <div class="col-12">
+                  <label for="penulis" class="form-label">Penulis</label>
+                  <input type="text" class="form-control" id="penulis" value="Tom Holland">
+                </div>
+                <div class="col-12">
+                  <label class="col-form-label" for>Kategori</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option>-Pilih Kategori-</option>
+                    <option selected value="1">Berita</option>
+                    <option value="2">Kegiatan</option>
+                    <option value="3">Artikel</option>
+                  </select>
+                </div>
+              <!-- Vertical Form -->
             </div>
           </div>
-          
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
 
+                <div class="col-12 mt-3">
+                  <label for="konten" class="form-label">Konten</label>
+                  <textarea class="form-control" style="height: 300px">Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                  </textarea>
+                </div>
+                <div class="mt-3">
+                  <button type="submit" class="btn btn-primary">Simpan</button>
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+              </form>
+              <a href="admin_article.html"><button class="btn btn-primary mt-3">Kembali</button></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
